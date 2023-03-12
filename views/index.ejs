@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Express-Link</title>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <form method="POST" action="/">
+      <label for="longUrl">Enter a long URL:</label>
+      <input type="text" name="longUrl" id="longUrl">
+      <button type="submit">Shorten URL</button>
+    </form>
+    <% if (url && url.shortUrl) { %>
+      <p>Short URL:</p>
+      <a href="<%= url.shortUrl %>"><%= url.shortUrl %></a>
+    <% } %>
+  </body>
+</html>
