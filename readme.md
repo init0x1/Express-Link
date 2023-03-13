@@ -6,7 +6,7 @@
 
 ## Installation
 
-To use `Express-Link` in your Node.js project, you'll need to install the following packages using npm:
+To use `Express-Link` , you'll need to install the following packages using npm:
 
 ```
 npm install express mongoose ejs valid-url shortid
